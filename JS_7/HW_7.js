@@ -1,5 +1,5 @@
-// // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
-//
+// // // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+// //
 // function User(id, name, surname, email, phone) {
 //     this.id = id;
 //     this.name = name;
@@ -27,11 +27,7 @@
 //
 // //
 // // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-// let filter_pair_User = User_arr.filter((item) => {
-//     if (item.id % 2 === 0) {
-//         return item;
-//     }
-// });
+// let filter_pair_User = User_arr.filter((item => !(item.id % 2 === 0)));
 // console.log(filter_pair_User);
 //
 //
