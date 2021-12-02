@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
+    molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+    Dolore hic in quae sed.
+</p>
+
+<div id="rules" class="fc bp">
+    Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+    клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+    участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+</div>
+
+<ul>
+    <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+    <li class="fc_rules rule2">Второе правило Бойцовского
+        клуба: никогда никому не рассказывать о Бойцовском клубе
+    </li>
+    <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+        участвуют только двое.
+    </li>
+    <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+</ul>
+
+<script>
+    let p_by_id = document.getElementById(`content`);
+    console.log(p_by_id);
+
+    // -- отримує текст з блоку з id "rules"
+    let rules_by_id = document.getElementById(`rules`);
+    console.log(rules_by_id);
+
+    // -- замініть текст параграфа з id 'content' на будь-який інший
+    p_by_id.innerHTML = `<p>QWERTY</p>`;
+    // -- замініть текст параграфа з id 'rules' на будь-який інший
+    rules_by_id.innerHTML = `<p>TOMORROW</p>`;
+    // -- змініть кожному елементу колір фону на червоний
+    let change_back_red = document.body.children;
+    for (const element of change_back_red) {
+        element.style.backgroundColor = `red`;
+    }
+    // -- змініть кожному елементу колір тексту на синій
+    let change_back_blue = document.body.children;
+    for (const element of change_back_blue) {
+        element.style.backgroundColor = `blue`;
+    }
+    // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
+    let rules_class_id = document.getElementById(`rules`);
+    console.log(rules_by_id)
+    // -- поміняти колір тексту у всіх елементів fc_rules на червоний
+    let change_col_red_rules = document.getElementsByClassName(`fc_rules`);
+    for (const element of change_col_red_rules) {
+        element.style.color = `red`
+    }
+</script>
+
+</body>
+</html>
