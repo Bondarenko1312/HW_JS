@@ -34,13 +34,14 @@
     // 1) Напишіть код, який :
     // a) додає клас з назвою групи, елементу з ід main_header
     let add_class_name = document.getElementById(`main_header`);
-    for (let element of add_class_name) {
-        element.classList.add(`group_name`)
-        console.log(add_class_name)
-    }
+    add_class_name.classList.add(`group_name`)
+    console.log(add_class_name)
+
     // b) робить шириниу елементу ul 400px
     let ul_400 = document.getElementsByTagName(`ul`);
-    ul_400.style.width = `400px`;
+    for (const element of ul_400) {
+        ul_400.style.width = `400px`;
+    }
     // c) робить шириниу всіх елементів з класом linkList шириною 50%
     let width_link = document.getElementsByClassName(`linkList`);
     for (const element of width_link) {
