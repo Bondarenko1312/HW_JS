@@ -1,0 +1,25 @@
+#post {
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+#comments {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+
+
+#commentsObject {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#container {
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+}
