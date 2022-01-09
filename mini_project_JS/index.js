@@ -19,7 +19,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             userContent.id='userContent'
             let userButton = document.createElement('button')
             let userDetails = document.createElement('a');
-            userDetails.appendChild(document.createTextNode('user-details'));
+            userDetails.appendChild(document.createTextNode('user_details'));
             userDetails.href = 'user-details.html'
             userButton.append(userDetails)
             userId.innerText = `${param.id}`
