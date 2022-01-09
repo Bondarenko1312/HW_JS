@@ -1,7 +1,7 @@
 // <!--В index.html-->
 // <!--1 получить массив объектов user с endpoint`а https://jsonplaceholder.typicode.com/users-->
 // <!--2 Вывести id,name всех user в index.html. Отдельный блок для каждого user.-->
-// <!--3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html, которая имеет детальную информацию про объект на который кликнули-->
+// <!--3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user_details.html, которая имеет детальную информацию про объект на который кликнули-->
 let container = document.createElement('div')
 container.id = 'container'
 document.body.append(container)
@@ -20,7 +20,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let userButton = document.createElement('button')
             let userDetails = document.createElement('a');
             userDetails.appendChild(document.createTextNode('user_details'));
-            userDetails.href = 'user-details.html'
+            userDetails.href = 'user_details.html'
             userButton.append(userDetails)
             userId.innerText = `${param.id}`
             userName.innerText = `${param.name}`
